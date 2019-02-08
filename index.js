@@ -86,7 +86,7 @@ GAME.appendChild('rock')
    if(top < GAME_HEIGHT - 20) {
      window.requestAnimationFrame(moveRock)
    } else {
-     GAME.remove(rock)
+     rock.remove()
    }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
