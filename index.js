@@ -105,7 +105,6 @@ function moveDodgerLeft() {
       window.requestAnimationFrame(stepLeft)
     }
     }
-    window.requestAnimationFrame(stepLeft)
 }
 
 function moveDodgerRight() {
@@ -119,7 +118,6 @@ function moveDodgerRight() {
       window.requestAnimationFrame(stepRight)
     }
     }
-    window.requestAnimationFrame(stepRight)
 }
 
 function positionToInteger(p) {
