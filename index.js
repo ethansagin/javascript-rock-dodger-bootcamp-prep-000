@@ -118,9 +118,9 @@ window.requestAnimationFrame(moveRock)
  */
 function endGame() {
   clearInterval(gameInterval);
-  ROCKS.forEach(function rock{
+  ROCKS.forEach(function(rock) {
     GAME.removeChild(ROCKS[0]);
-    ROCKS.shift()}
+    ROCKS.shift()})
   window.removeEventListener('keydown', moveDodger)
   START.innerHTML = 'Play again?'
   START.style.display = 'inline'
