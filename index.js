@@ -121,7 +121,7 @@ function endGame() {
   while(ROCKS.length > 0) {
     GAME.removeChild(ROCKS[0]);
     ROCKS.shift()}
-  window.removeEventListener(moveDodger)
+  window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
 
