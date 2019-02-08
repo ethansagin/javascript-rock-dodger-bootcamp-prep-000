@@ -85,8 +85,6 @@ GAME.appendChild('rock')
 if(checkCollision(rock)) {
   endGame();
 } else if(top < GAME_HEIGHT - 20) {
-  top += 2
-  rock.style.top = `${top}px`
   window.requestAnimationFrame(moveRock)
 } else if(top === GAME_HEIGHT - 20) {
   GAME.remove(rock)
