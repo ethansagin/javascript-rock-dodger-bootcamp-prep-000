@@ -84,11 +84,12 @@ GAME.appendChild('rock')
    rock.style.top = `${top += 2}px`;
    if(checkCollision(rock)) {
      endGame();
-} else if(top < GAME_HEIGHT - 20) {
-  window.requestAnimationFrame(moveRock)
-} else if(top === GAME_HEIGHT - 20) {
-  GAME.remove(rock)
-  }
+   }
+   if(top < GAME_HEIGHT - 20) {
+     window.requestAnimationFrame(moveRock)
+   } else {
+     GAME.remove(rock)
+   }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
