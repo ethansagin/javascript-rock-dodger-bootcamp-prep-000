@@ -118,7 +118,7 @@ window.requestAnimationFrame(moveRock)
  */
 function endGame() {
   clearInterval(gameInterval);
-  while(ROCKS.length > 0) {
+  ROCKS.forEach(function rock{
     GAME.removeChild(ROCKS[0]);
     ROCKS.shift()}
   window.removeEventListener('keydown', moveDodger)
