@@ -105,16 +105,13 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-    var leftNumbers = DODGER.style.left.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
- 
-    function stepRight() {
-      dodger.style.left = `${left + 4}px`
-    
-    if(left < 360) {
-      window.requestAnimationFrame(stepRight)
+ window.requestAnimationFrame(function() {
+    const left = positionToInteger(DODGER.style.left)
+
+     if (left < 360) {
+      DODGER.style.left = `${left + 4}px`;
     }
-    }
+  })
 }
 
 function positionToInteger(p) {
