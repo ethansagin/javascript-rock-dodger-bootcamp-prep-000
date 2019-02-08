@@ -102,15 +102,10 @@ function moveDodgerLeft() {
       dodger.style.left = `${left - 4}px`
     
     if(left > 0) {
-      window.requestAnimationFrame(leftStep)
+      window.requestAnimationFrame(leftSstepLefttep)
     }
     }
     window.requestAnimationFrame(rightStep)
-  // implement me!
-  /**
-   * This function should move DODGER to the left
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
 }
 
 function moveDodgerRight() {
