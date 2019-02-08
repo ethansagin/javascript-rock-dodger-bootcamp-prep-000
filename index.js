@@ -122,6 +122,7 @@ function endGame() {
     GAME.removeChild(ROCKS[0]);
     ROCKS.shift()}
   window.removeEventListener('keydown', moveDodger)
+  
   alert('YOU LOSE!')
 }
 
