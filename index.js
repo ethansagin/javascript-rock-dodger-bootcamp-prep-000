@@ -102,10 +102,10 @@ function moveDodgerLeft() {
       dodger.style.left = `${left - 4}px`
     
     if(left > 0) {
-      window.requestAnimationFrame(leftSstepLefttep)
+      window.requestAnimationFrame(stepLeft)
     }
     }
-    window.requestAnimationFrame(rightStep)
+    window.requestAnimationFrame(stepLeft)
 }
 
 function moveDodgerRight() {
@@ -116,10 +116,10 @@ function moveDodgerRight() {
       dodger.style.left = `${left + 4}px`
     
     if(left < 360) {
-      window.requestAnimationFrame(rightStep)
+      window.requestAnimationFrame(stepRight)
     }
     }
-    window.requestAnimationFrame(rightStep)
+    window.requestAnimationFrame(stepRight)
 }
 
 function positionToInteger(p) {
