@@ -158,8 +158,8 @@ function moveDodgerLeft() {
     if(left > 0) {
       window.requestAnimationFrame(leftStep)
     }
-    window.requestAnimationFrame(leftStep)
     }
+    window.requestAnimationFrame(rightStep)
   // implement me!
   /**
    * This function should move DODGER to the left
@@ -177,8 +177,8 @@ function moveDodgerRight() {
     if(left < 360) {
       window.requestAnimationFrame(rightStep)
     }
-    window.requestAnimationFrame(rightStep)
     }
+    window.requestAnimationFrame(rightStep)
   // implement me!
   /**
    * This function should move DODGER to the right
